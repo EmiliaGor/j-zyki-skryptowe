@@ -1,0 +1,24 @@
+version: "3.1"
+
+stories:
+
+- story: open
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: open
+  - action: utter_open
+
+- story: menu
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: menu
+  - action: utter_menu
+
+- story: contact
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: contact
+  - action: utter_contact

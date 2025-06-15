@@ -1,0 +1,40 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - open
+  - menu
+  - contact
+  - bot_challenge
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_open:
+  - text: "We are open from 7am to 3pm."
+
+  utter_contact:
+  - text: "you can contact us by calling 123 456 789"
+
+  utter_menu:
+  - text: "this is our menu."
+    image: "https://marketplace.canva.com/EAFwRADHMsM/1/0/1035w/canva-orange-and-black-bold-geometric-restaurant-menu-AX4bhelWqNA.jpg"
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
